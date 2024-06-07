@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      const clearCheckboxes = () => {
+        document
+          .querySelectorAll("input[type='checkbox']:checked")
+          .forEach((cb) => {
+            cb.click();
+          });
+          alert("Wysłano powiadomienia o przeterminowanej płatności")
+      };
+    </script>
+    <style>
+      table {
+        text-align: center;
+        border-collapse: collapse;
+      }
+      tr {
+        border-bottom: 1px solid black;
+      }
+      td,
+      th {
+        padding: 4px 8px;
+      }
+      button {
+        margin-top: 30px;
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Przeterminowane faktury</h1>
+
+    <table>
+      <thead>
+        <th>Lp.</th>
+        <th>Numer</th>
+        <th>Imię</th>
+        <th>Nazwisko</th>
+        <th>Kwota</th>
+        <th>Termin Płatności</th>
+        <th>Email</th>
+      </thead>
+      <tr>
+        <td>1</td>
+        <td>FV/123/2024</td>
+        <td>Adam</td>
+        <td>Kowalski</td>
+        <td>1204,15 zł</td>
+        <td>24.05.2024</td>
+        <td>test@gmail.com</td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>FV/200/2024</td>
+        <td>Krzysztof</td>
+        <td>Wróblewski</td>
+        <td>485,00 zł</td>
+        <td>05.06.2024</td>
+        <td>test@gmail.com</td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>FV/118/2024</td>
+        <td>Maria</td>
+        <td>Zielińska</td>
+        <td>870,65 zł</td>
+        <td>22.05.2024</td>
+        <td>test@gmail.com</td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>FV/191/2024</td>
+        <td>Jakub</td>
+        <td>Szewczyk</td>
+        <td>701,99 zł</td>
+        <td>02.06.2024</td>
+        <td>test@gmail.com</td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>FV/185/2024</td>
+        <td>Julia</td>
+        <td>Mikołajczyk</td>
+        <td>650,79 zł</td>
+        <td>05.06.2024</td>
+        <td>test@gmail.com</td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>FV/76/2024</td>
+        <td>Jan</td>
+        <td>Wrona</td>
+        <td>999,99 zł</td>
+        <td>05.04.2024</td>
+        <td>test@gmail.com</td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>FV/140/2024</td>
+        <td>Monika</td>
+        <td>Bielecka</td>
+        <td>125,40 zł</td>
+        <td>28.05.2024</td>
+        <td>test@gmail.com</td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>FV/145/2024</td>
+        <td>Marta</td>
+        <td>Kopacz</td>
+        <td>390,00 zł</td>
+        <td>29.05.2024</td>
+        <td>test@gmail.com</td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>FV/205/2024</td>
+        <td>Zuzanna</td>
+        <td>Czarnek</td>
+        <td>700,00 zł</td>
+        <td>05.06.2024</td>
+        <td>test@gmail.com</td>
+        <td><input type="checkbox" /></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>FV/155/2024</td>
+        <td>Michał</td>
+        <td>Polak</td>
+        <td>107,50 zł</td>
+        <td>29.05.2024</td>
+        <td>test@gmail.com</td>
+        <td><input type="checkbox" /></td>
+      </tr>
+    </table>
+  </body>
+  <button onclick="clearCheckboxes()">Oznacz wysłanie powiadomień</button>
+</html>
